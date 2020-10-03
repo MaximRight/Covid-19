@@ -1,0 +1,17 @@
+.header {
+	height: 65px;
+	outline: 1px solid tomato;
+}
+
+.header .box {
+	@include flex-center($content: space-between, $wrap: nowrap);
+}
+
+.header-nav {
+	@include flex-center;
+}
+
+.header-nav__list {
+	@include flex-center;
+	margin-right: 40px;
+}

@@ -1,0 +1,430 @@
+* {
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+textarea {
+  resize: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  margin: 0px;
+  padding: 0px;
+  list-style: none;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5 {
+  padding: 0;
+  margin: 0;
+  font-weight: 400;
+}
+
+body {
+  overflow-x: hidden;
+  font-family: "Gelion", sans-serif;
+  font-size: 18px;
+  color: #4b4f51;
+  letter-spacing: 0.03em;
+}
+
+.section {
+  padding: 50px 0px;
+}
+
+.section-first-title {
+  text-align: center;
+  font-family: "Red Hat Display";
+  font-weight: 700;
+  font-size: 29px;
+  line-height: 1.24;
+  color: #fa5652;
+}
+
+.section-second-title {
+  font-family: "Red Hat Display";
+  font-weight: 700;
+  font-size: 50px;
+  line-height: 1.19;
+  color: #035755;
+  text-transform: capitalize;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.section-third-title {
+  font-size: 18px;
+  line-height: 2.15;
+  text-transform: capitalize;
+}
+
+.box {
+  text-align: center;
+  width: 1440px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.icon {
+  fill: currentColor;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.is-none {
+  display: none;
+}
+
+.logo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  font-family: "Red Hat Display", sans-serif;
+  font-weight: 700;
+  font-size: 19px;
+  line-height: 1.31;
+  color: #035755;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+
+.logo__icon {
+  margin-right: 14px;
+}
+
+.button {
+  width: 250px;
+  height: 80px;
+  color: #ffffff;
+  background-color: #fb4c47;
+  border: 2px solid #fb4c47;
+  border-radius: 46px;
+  outline: transparent;
+}
+
+.button:hover, .button:focus {
+  background-color: #c03632;
+}
+
+.button:active {
+  background-color: #df5752;
+}
+
+.header {
+  height: 65px;
+  outline: 1px solid tomato;
+}
+
+.header .box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+}
+
+.header-nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.header-nav__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin-right: 40px;
+}
+
+.header-nav__item:not(:last-child) {
+  margin-right: 50px;
+}
+
+.header-nav__link {
+  line-height: 1.22;
+  color: #035755;
+}
+
+.header-nav__link:hover, .header-nav__link:focus {
+  color: #fb4c47;
+}
+
+.header-nav__button {
+  width: 154px;
+  height: 55px;
+  color: #fb4c47;
+  background-color: transparent;
+}
+
+.hero {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.hero .box {
+  width: 641px;
+  text-align: left;
+}
+
+.hero__title {
+  margin-bottom: 96px;
+  width: 394px;
+  text-align: left;
+  font-family: "Red Hat Display", sans-serif;
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 1.22;
+  color: #fa5652;
+}
+
+.hero__span {
+  display: block;
+}
+
+.hero__text {
+  display: block;
+  margin-bottom: 54px;
+  width: 720px;
+  text-align: left;
+  font-size: 24px;
+  line-height: 1.9;
+  text-transform: capitalize;
+}
+
+.hero-icon {
+  position: relative;
+  left: 120px;
+  -webkit-transform: scale(1.3);
+          transform: scale(1.3);
+}
+
+.hero__button {
+  width: 250px;
+  height: 80px;
+}
+
+.overview .box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.overview .box::before {
+  display: block;
+  content: "";
+  width: 880px;
+  height: 762px;
+  background-image: url(../../images/overview-2.svg);
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.overview__text {
+  font-size: 20px;
+  line-height: 2.15;
+  color: #4b4f51;
+  text-transform: capitalize;
+}
+
+.overview__button {
+  color: #fa5652;
+  background-color: rgba(250, 86, 82, 0.15);
+  border-radius: 65px;
+  border: transparent;
+}
+
+.contagion-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.contagion-list__item {
+  width: calc((100% - 2 * 30px) / 3);
+}
+
+.contagion-list__title {
+  font-weight: 500;
+  font-size: 36px;
+  line-height: 1.47;
+  text-transform: capitalize;
+}
+
+.contagion-list__text {
+  line-height: 1.85;
+  text-transform: capitalize;
+}
+
+.contagion-list__item::before {
+  display: block;
+  content: "";
+  width: 270px;
+  height: 249px;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.contagion-list__item:nth-child(1)::before {
+  background-image: url(../../images/contagion-1.svg);
+}
+
+.contagion-list__item:nth-child(2)::before {
+  background-image: url(../../images/contagion-2.svg);
+}
+
+.contagion-list__item:nth-child(3)::before {
+  background-image: url(../../images/contagion-3.svg);
+}
+
+.symptoms .box::after {
+  display: block;
+  content: "";
+  width: 1168px;
+  height: 872px;
+  background-image: url(../../images/symptoms.svg);
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.prevention__svg {
+  display: block;
+  content: "";
+  width: 656px;
+  height: 690px;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.prevention-list__item-title {
+  font-weight: 500;
+  font-size: 47px;
+  line-height: 1.47;
+  color: #035755;
+  text-transform: capitalize;
+}
+
+.prevention-list__item-text {
+  font-size: 18px;
+  line-height: 2.21;
+  text-transform: capitalize;
+}
+
+.prevention__item:nth-child(1) .prevention__svg {
+  background-image: url(../../images/prevent-1.svg);
+}
+
+.prevention__item:nth-child(2) .prevention__svg {
+  background-image: url(../../images/prevent-2.svg);
+}
+
+.prevention__item:nth-child(3) .prevention__svg {
+  background-image: url(../../images/prevent-3.svg);
+}
+
+.prevention__item:nth-child(4) .prevention__svg {
+  background-image: url(../../images/prevent-4.svg);
+}
+
+.map-title {
+  font-weight: 500;
+  font-size: 48px;
+  line-height: 1.2;
+  color: #035755;
+}
+
+.map-list__item {
+  font-weight: 500;
+  font-size: 31px;
+  line-height: 1.19;
+  color: #13615f;
+}
+
+.feedback-title {
+  font-weight: 500;
+  font-size: 64px;
+  line-height: 1.2;
+  color: #0c6c44;
+}
+
+.feedback__input {
+  font-size: 22px;
+  line-height: 1.18;
+}
+
+.footer-nav__link {
+  font-size: 23px;
+  line-height: 1.2;
+  color: #00402e;
+}
+/*# sourceMappingURL=main.css.map */

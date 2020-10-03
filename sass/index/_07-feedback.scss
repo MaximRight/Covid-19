@@ -1,0 +1,11 @@
+.feedback-title {
+	font-weight: $feedback-title-w;
+	font-size: $feedback-title-s;
+	line-height: $feedback-title-lh;
+	color: $feedback-title-c;
+}
+
+.feedback__input {
+	font-size: $placeholder-s;
+	line-height: $placeholder-lh;
+}

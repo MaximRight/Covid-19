@@ -1,0 +1,16 @@
+.logo {
+	@include flex-center;
+
+	font-family: $title-ffam;
+	font-weight: $logo-w;
+	font-size: $logo-f;
+	line-height: $logo-lh;
+	color: $section-second-title-c;
+
+	text-transform: uppercase;
+	text-decoration: none;
+}
+
+.logo__icon {
+	margin-right: 14px;
+}

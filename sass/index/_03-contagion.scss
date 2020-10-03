@@ -1,0 +1,43 @@
+// .contagion__text {
+// 	@include section-title-small;
+// }
+
+.contagion-list {
+	@include flex-center;
+}
+
+.contagion-list__item {
+	width: calc((100% - 2 * 30px) / 3);
+}
+
+.contagion-list__title {
+	font-weight: $contagion-item-w;
+	font-size: $contagion-item-title-f;
+	line-height: $contagion-item-title-lh;
+
+	text-transform: capitalize;
+}
+
+.contagion-list__text {
+	line-height: $contagion-item-content-lh;
+
+	text-transform: capitalize;
+}
+
+.contagion-list__item::before {
+	display: block;
+	content: "";
+	width: 270px;
+	height: 249px;
+	// background-color: red;
+	background-size: contain;
+	background-repeat: no-repeat;
+}
+
+$items: "1" "contagion-1", "2" "contagion-2", "3" "contagion-3";
+
+@each $childNumber, $iconName in $items {
+	.contagion-list__item:nth-child(#{$childNumber})::before {
+		background-image: url(../../images/#{$iconName}.svg);
+	}
+}

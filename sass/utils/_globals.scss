@@ -1,0 +1,118 @@
+* {
+	user-select: none;
+}
+
+// Стандарт для рисунков
+img {
+	display: block;
+	max-width: 100%;
+	height: auto;
+}
+
+// Отключаем ресайз комментов
+textarea {
+	resize: none;
+}
+
+// Убираем подчеркивания ссылкам
+a {
+	text-decoration: none;
+}
+
+// Отключаем точки и отступы спискам
+ul {
+	margin: 0px;
+	padding: 0px;
+	list-style: none;
+}
+
+// Отключаем отступы абзацам и заголовкам
+p,
+h1,
+h2,
+h3,
+h4,
+h5 {
+	padding: 0;
+	margin: 0;
+	font-weight: 400;
+}
+
+// Паддинг для плавающего меню, высчитывается по джаваскрипту + общие значения для всего боди
+body {
+	// padding-top: 80px;
+
+	// width: 1915px;
+	overflow-x: hidden;
+
+	font-family: $global-ffam;
+	font-size: $global-f;
+	color: $section-content-c;
+	letter-spacing: 0.03em;
+}
+
+// Паддинги для секции в этом макете
+.section {
+	padding: 50px 0px;
+}
+
+// Заголовки в секциях
+.section-first-title {
+	text-align: center;
+
+	font-family: "Red Hat Display";
+	font-weight: 700;
+	font-size: $section-first-title-f;
+	line-height: $section-first-title-lh;
+
+	color: $section-first-title-c;
+}
+
+.section-second-title {
+	font-family: "Red Hat Display";
+	font-weight: 700;
+	font-size: $section-second-title-f;
+	line-height: $section-second-title-lh;
+
+	color: $section-second-title-c;
+	text-transform: capitalize;
+
+	text-shadow: $title-shadow;
+}
+
+.section-third-title {
+	font-size: $section-third-title-f;
+	line-height: $section-third-title-lh;
+
+	text-transform: capitalize;
+}
+
+// Контейнер для центровки контента
+.box {
+	text-align: center;
+	width: 1440px;
+	margin-left: auto;
+	margin-right: auto;
+	padding-left: 15px;
+	padding-right: 15px;
+}
+
+// Параметр позволяет использовать color вместо fill
+.icon {
+	fill: currentColor;
+}
+
+.visually-hidden {
+	position: absolute;
+	width: 1px;
+	height: 1px;
+	margin: -1px;
+	border: 0;
+	padding: 0;
+	clip: rect(0 0 0 0);
+	overflow: hidden;
+}
+
+.is-none {
+	display: none;
+}

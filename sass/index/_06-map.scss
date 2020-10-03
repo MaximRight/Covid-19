@@ -1,0 +1,14 @@
+.map-title {
+	font-weight: $map-title-w;
+	font-size: $map-title-s;
+	line-height: $map-title-lh;
+
+	color: #035755;
+}
+
+.map-list__item {
+	font-weight: $map-title-w;
+	font-size: $map-item-s;
+	line-height: $map-item-lh;
+	color: $map-text-color;
+}

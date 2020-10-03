@@ -1,0 +1,20 @@
+.header-nav__item:not(:last-child) {
+	margin-right: 50px;
+}
+
+.header-nav__link {
+	line-height: $header-link-lh;
+	color: $site-nav-c;
+
+	&:hover,
+	&:focus {
+		color: $accent-color;
+	}
+}
+
+.header-nav__button {
+	width: 154px;
+	height: 55px;
+	color: $button-color;
+	background-color: transparent;
+}

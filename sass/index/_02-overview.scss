@@ -1,0 +1,29 @@
+.overview .box {
+	display: flex;
+}
+
+.overview .box::before {
+	display: block;
+	content: "";
+	width: 880px;
+	height: 762px;
+	// background-color: red;
+	background-image: url(../../images/overview-2.svg);
+	background-size: contain;
+	background-repeat: no-repeat;
+}
+
+.overview__text {
+	font-size: $overview-content-f;
+	line-height: $overview-content-lh;
+	color: $section-content-c;
+
+	text-transform: capitalize;
+}
+
+.overview__button {
+	color: $section-first-title-c;
+	background-color: rgba(250, 86, 82, 0.15);
+	border-radius: 65px;
+	border: transparent;
+}
