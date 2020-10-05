@@ -1,19 +1,64 @@
-.prevention__svg {
+.prevention .box {
+	padding-top: 50px;
+}
+
+.prevention-list {
+	counter-reset: number;
+}
+
+.prevention-list__item {
+	outline: 1px solid tomato;
+	@include flex-center($wrap: nowrap, $content: space-evenly);
+
+	&:nth-child(2n-1) {
+		flex-direction: row-reverse;
+	}
+}
+
+.prevention-list__svg {
 	display: block;
 	content: "";
-	width: 656px;
-	height: 690px;
+	width: 538px;
+	height: 444px;
 	background-size: contain;
 	background-repeat: no-repeat;
+	background-position: center;
+}
+
+.prevention-list__text-content {
+	width: 532px;
+	text-align: left;
 }
 
 .prevention-list__item-title {
+	position: relative;
 	font-weight: $prevention-title-w;
 	font-size: $prevention-item-title-f;
 	line-height: $prevention-item-title-lh;
 	color: $section-second-title-c;
 
 	text-transform: capitalize;
+
+	&::before {
+		counter-increment: number;
+		content: "0" counter(number);
+
+		@include flex-center;
+
+		position: absolute;
+		left: -19%;
+		top: -4px;
+
+		font-family: Red Hat Display;
+		font-weight: 700;
+		font-size: 44px;
+		line-height: 1.45;
+		color: #fa5652;
+		border-radius: 50%;
+		background-color: rgba(250, 86, 82, 0.15);
+		width: 75px;
+		height: 75px;
+	}
 }
 
 .prevention-list__item-text {
@@ -26,7 +71,7 @@
 $items: "1" "prevent-1", "2" "prevent-2", "3" "prevent-3", "4" "prevent-4";
 
 @each $childNumber, $iconName in $items {
-	.prevention__item:nth-child(#{$childNumber}) .prevention__svg {
+	.prevention-list__item:nth-child(#{$childNumber}) .prevention-list__svg {
 		background-image: url(../../images/#{$iconName}.svg);
 	}
 }

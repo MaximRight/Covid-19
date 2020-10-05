@@ -49,15 +49,22 @@ body {
 	font-size: $global-f;
 	color: $section-content-c;
 	letter-spacing: 0.03em;
+
+	// background: linear-gradient(
+	// 	90deg,
+	// 	rgba(2, 0, 36, 1) 0%,
+	// 	rgba(21, 166, 195, 1) 9%
+	// );
 }
 
 // Паддинги для секции в этом макете
 .section {
-	padding: 50px 0px;
+	padding-top: 50px;
 }
 
 // Заголовки в секциях
 .section-first-title {
+	margin-bottom: 20px;
 	text-align: center;
 
 	font-family: "Red Hat Display";
@@ -69,6 +76,7 @@ body {
 }
 
 .section-second-title {
+	margin-bottom: 30px;
 	font-family: "Red Hat Display";
 	font-weight: 700;
 	font-size: $section-second-title-f;
@@ -81,6 +89,10 @@ body {
 }
 
 .section-third-title {
+	margin-bottom: 70px;
+	width: 740px;
+	margin-left: auto;
+	margin-right: auto;
 	font-size: $section-third-title-f;
 	line-height: $section-third-title-lh;
 

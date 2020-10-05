@@ -7,31 +7,38 @@
 }
 
 .contagion-list__item {
-	width: calc((100% - 2 * 30px) / 3);
-}
+	@include flex-center;
 
-.contagion-list__title {
-	font-weight: $contagion-item-w;
-	font-size: $contagion-item-title-f;
-	line-height: $contagion-item-title-lh;
+	padding: 65px 35px 78px;
+	// padding-top: 65px;
+	// padding-bottom: 78px;
+	// padding-left: 50px;
+	// padding-right: 50px;
+	width: calc((100% - 2 * 31px) / 3);
 
-	text-transform: capitalize;
-}
+	box-shadow: 0px 35px 87px rgba(0, 0, 0, 0.11);
+	border-radius: 10px;
 
-.contagion-list__text {
-	line-height: $contagion-item-content-lh;
+	&::before {
+		margin-bottom: 55px;
 
-	text-transform: capitalize;
-}
+		display: block;
+		content: "";
+		width: 270px;
+		height: 249px;
+		// background-color: red;
+		background-size: contain;
+		background-repeat: no-repeat;
+		background-position: center;
+	}
 
-.contagion-list__item::before {
-	display: block;
-	content: "";
-	width: 270px;
-	height: 249px;
-	// background-color: red;
-	background-size: contain;
-	background-repeat: no-repeat;
+	&:not(:nth-child(3n)) {
+		margin-right: 30px;
+	}
+
+	&:not(:nth-last-child(-n + 3)) {
+		margin-bottom: 30px;
+	}
 }
 
 $items: "1" "contagion-1", "2" "contagion-2", "3" "contagion-3";
@@ -40,4 +47,22 @@ $items: "1" "contagion-1", "2" "contagion-2", "3" "contagion-3";
 	.contagion-list__item:nth-child(#{$childNumber})::before {
 		background-image: url(../../images/#{$iconName}.svg);
 	}
+}
+
+.contagion-list__title {
+	margin-bottom: 13px;
+
+	font-weight: $contagion-item-w;
+	font-size: $contagion-item-title-f;
+	line-height: $contagion-item-title-lh;
+
+	color: $section-second-title-c;
+
+	text-transform: capitalize;
+}
+
+.contagion-list__text {
+	line-height: $contagion-item-content-lh;
+
+	text-transform: capitalize;
 }

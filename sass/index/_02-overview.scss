@@ -1,16 +1,26 @@
 .overview .box {
-	display: flex;
+	@include flex-center($content: space-between, $wrap: nowrap);
+}
+
+.overview__block {
+	width: 648px;
+	text-align: left;
+}
+
+.overview__title {
+	text-align: left;
 }
 
 .overview .box::before {
 	display: block;
 	content: "";
 	width: 880px;
-	height: 762px;
+	height: 693px;
 	// background-color: red;
 	background-image: url(../../images/overview-2.svg);
-	background-size: contain;
+	background-size: cover;
 	background-repeat: no-repeat;
+	background-position: center;
 }
 
 .overview__text {

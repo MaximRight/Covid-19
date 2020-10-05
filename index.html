@@ -85,7 +85,7 @@
 			<section id="overview" class="overview section">
 				<div class="box">
 				<div class="overview__block">
-						<h2 class="section-first-title">What Is Covid-19</h2>
+						<h2  class="overview__title section-first-title">What Is Covid-19</h2>
 					<h3 class="section-second-title">Coronavirus</h3>
 					<p class="overview__text"
 						>Corona viruses are a type of virus. There are many different kinds,
@@ -97,13 +97,13 @@
 					<button class="overview__button button" type="button"
 						>Learn More</button
 				</div>
-					>
+					
 				</div>
 			</section>
 
-			<section id="contagion" class="contagion section">
+			<section  class="contagion section">
 				<div class="box">
-					<h2 class="section-first-title">Covid-19 </h2>
+					<h2 id="contagion" class="section-first-title">Covid-19 </h2>
 					<h3 class="section-second-title">Contagion</h3>
 					<h4 class="section-third-title"
 						>Corona viruses are a type of virus. There are many different kinds,
@@ -136,9 +136,9 @@
 				</div>
 			</section>
 
-			<section id="symptoms" class="symptoms section">
+			<section  class="symptoms section">
 				<div class="box">
-					<h2 class="section-first-title">Covid-19</h2>
+					<h2 id="symptoms" class="section-first-title">Covid-19</h2>
 					<h3 class="section-second-title">Symptoms</h3>
 					<h4 class="section-third-title"
 						>Corona viruses are a type of virus. There are many different kinds,
@@ -148,9 +148,9 @@
 				</div>
 			</section>
 
-			<section id="prevention" class="prevention section">
+			<section  class="prevention section">
 				<div class="box">
-					<h2 class="section-first-title">Covid-19 </h2>
+					<h2 id="prevention" class="section-first-title">Covid-19 </h2>
 					<h3 class="section-second-title">What should we do</h3>
 					<h4 class="section-third-title"
 						>Corona viruses are a type of virus. There are many different kinds,
@@ -158,8 +158,10 @@
 					>
 					<ul class="prevention-list">
 						<li class="prevention-list__item">
-							<div class="prevention-list__svg"></div>
-							<h5 class="prevention-list__item-title">wear masks</h5>
+							<div class="prevention-list__svg">
+							</div>
+							<div class="prevention-list__text-content">
+								<h5 class="prevention-list__item-title">Wear masks</h5>
 							<p class="prevention-list__item-text"
 								>Continually seize impactful vortals rather than future-proof
 								supply chains. Uniquely exploit emerging niches via fully tested
@@ -167,9 +169,11 @@
 								skills vis-a-vis pandemic "outside the box" thinking.
 								Objectively
 							</p>
+							</div>
 						</li>
 						<li class="prevention-list__item">
 							<div class="prevention-list__svg"></div>
+							<div class="prevention-list__text-content">
 							<h5 class="prevention-list__item-title">Wash Your Hands</h5>
 							<p class="prevention-list__item-text"
 								>Continually seize impactful vortals rather than future-proof
@@ -177,10 +181,11 @@
 								meta-services. Competently pursue standards compliant leadership
 								skills vis-a-vis pandemic "outside the box" thinking.
 								Objectively Continually seize impactful vortals
-							</p></li
+							</p></div></li
 						>
 						<li class="prevention-list__item">
 							<div class="prevention-list__svg"></div>
+							<div class="prevention-list__text-content">
 							<h5 class="prevention-list__item-title">Use nose - rag</h5>
 							<p class="prevention-list__item-text"
 								>Continually seize impactful vortals rather than future-proof
@@ -188,77 +193,96 @@
 								meta-services. Competently pursue standards compliant leadership
 								skills vis-a-vis pandemic "outside the box" thinking.
 								Objectively
-							</p>
+							</p></div>
 						</li>
 						<li class="prevention-list__item">
 							<div class="prevention-list__svg"></div>
+							<div class="prevention-list__text-content">
 							<h5 class="prevention-list__item-title">Avoid contacts</h5>
 							<p class="prevention-list__item-text"
 								>Continually seize impactful vortals rather than future-proof
 								supply chains. Uniquely exploit emerging niches via fully tested
 								meta-services. Competently pursue standards compliant leadership
 								skills vis-a-vis pandemic</p
-							></li
+							></div></li
 						>
 					</ul>
 				</div>
 			</section>
 
 			<section class="map section">
-				<svg width="929" height="570">
+								<svg class="map__picture" width="929" height="570">
 					<use href="./images/sprite.svg#icon-map"></use>
 				</svg>
 				<h2 class="visually-hidden">map</h2>
-				<h3 class="map-title">Live Reports</h3>
-				<ul class="map-list">
-					<li class="map-list__item">
-						<svg width="46" height="35">
+				<div class="map__reports">
+					<h3 class="map-title">Live Reports</h3>
+
+					<table class="map-list">
+  <tr class="map-list__item" >
+    <td><svg class="map__flag" width="46" height="35">
 							<use href="./images/sprite.svg#icon-usa"></use></svg
-						>USA 100,392
-						<svg width="21" height="14">
+						></td>
+    <td colspan="1"><span class="map__name">USA</span></td>
+	<td><span class="map__number">100,392</span></td>
+	<td><svg width="21" height="14">
 							<use href="./images/sprite.svg#icon-triangle-up"></use>
-						</svg>
-					</li>
-					<li class="map-list__item"
-						><svg width="46" height="35">
+						</svg></td>
+  </tr>
+  <tr class="map-list__item">
+    <td><svg class="map__flag" width="46" height="35">
 							<use href="./images/sprite.svg#icon-italy"></use></svg
-						>Italy 86,498
-						<svg width="21" height="14">
-							<use href="./images/sprite.svg#icon-triangle-up"></use></svg
-					></li>
-					<li class="map-list__item"
-						><svg width="46" height="35">
+						></td>
+    <td>Italy</td>
+	<td>86,498</td>
+	<td><svg width="21" height="14">
+							<use href="./images/sprite.svg#icon-triangle-up"></use>
+						</svg></td>
+  </tr><tr class="map-list__item">
+    <td><svg class="map__flag" width="46" height="35">
 							<use href="./images/sprite.svg#icon-china"></use></svg
-						>China 81,340
-						<svg width="21" height="14">
-							<use href="./images/sprite.svg#icon-triangle-down"></use></svg
-					></li>
-					<li class="map-list__item"
-						><svg width="46" height="35">
+						></td>
+    <td>China</td>
+	<td>81,340</td>
+	<td><svg width="21" height="14">
+							<use href="./images/sprite.svg#icon-triangle-down"></use>
+						</svg></td>
+  </tr><tr class="map-list__item">
+    <td><svg class="map__flag" width="46" height="35">
 							<use href="./images/sprite.svg#icon-spain"></use></svg
-						>Spain 64,059
-						<svg width="21" height="14">
-							<use href="./images/sprite.svg#icon-triangle-up"></use></svg
-					></li>
-					<li class="map-list__item"
-						><svg width="46" height="35">
+						></td>
+    <td>Spain</td>
+	<td>64,059</td>
+	<td><svg width="21" height="14">
+							<use href="./images/sprite.svg#icon-triangle-up"></use>
+						</svg></td>
+  </tr><tr class="map-list__item">
+    <td><svg class="map__flag" width="46" height="35">
 							<use href="./images/sprite.svg#icon-germany"></use></svg
-						>Germany 50,871
-						<svg width="21" height="14">
-							<use href="./images/sprite.svg#icon-triangle-up"></use></svg
-					></li>
-					<li class="map-list__item"
-						><svg width="46" height="35">
+						></td>
+    <td>Germany</td>
+	<td>50,871</td>
+	<td><svg width="21" height="14">
+							<use href="./images/sprite.svg#icon-triangle-up"></use>
+						</svg></td>
+  </tr><tr class="map-list__item">
+    <td><svg class="map__flag" width="46" height="35">
 							<use href="./images/sprite.svg#icon-iran"></use></svg
-						>Iran 32,332
-						<svg width="21" height="14">
-							<use href="./images/sprite.svg#icon-triangle-up"></use></svg
-					></li>
-				</ul>
+						></td>
+    <td>Iran</td>
+	<td>32,332</td>
+	<td><svg width="21" height="14">
+							<use href="./images/sprite.svg#icon-triangle-up"></use>
+						</svg></td>
+  </tr>  
+</table>
+			
+				</div>
 			</section>
 
 			<section class="feedback section">
-				<h2 class="feedback-title">Have Question in mind? Let us help you</h2>
+				<div class="box">
+					<h2 class="feedback-title">Have Question in mind? Let us help you</h2>
 				<form action="" class="feedback__form">
 					<label for="" class="feedback__label">
 						<input
@@ -268,11 +292,15 @@
 					/></label>
 					<button class="feedback__button button" type="submit">Send</button>
 				</form>
+				</div>
 			</section>
 		</main>
 
-		<footer>
-			<a href="" class="logo">COVID-19</a>
+		<footer class="footer">
+			<div class="footer__box">
+				<a href="" class="logo">	<svg width="63" height="63" aria-label="logo icon" class="logo__icon">
+						<use href="./images/sprite.svg#icon-logo"></use>
+					</svg>COVID-19</a>
 			<ul class="footer-nav">
 				<li class="footer-nav__item"
 					><a class="footer-nav__link" href="#overview">Overview</a></li
@@ -310,6 +338,11 @@
 							<use href="./images/sprite.svg#icon-twitter"></use></svg></a
 				></li>
 			</ul>
+			</div>
+			<span class="copyright">2020 &copy All rights reserved by pixelspark.co</span>
 		</footer>
 	</body>
+
+	
+
 </html>

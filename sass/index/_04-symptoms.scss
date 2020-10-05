@@ -1,10 +1,18 @@
-.symptoms .box::after {
-	display: block;
-	content: "";
-	width: 1168px;
-	height: 872px;
-	// background-color: red;
-	background-image: url(../../images/symptoms.svg);
-	background-size: contain;
-	background-repeat: no-repeat;
+.symptoms .box {
+	@include flex-center;
+	flex-direction: column;
+
+	padding-top: 100px;
+
+	&::after {
+		text-align: center;
+		display: block;
+		content: "";
+		width: 1168px;
+		height: 872px;
+		// background-color: red;
+		background-image: url(../../images/symptoms.svg);
+		background-size: contain;
+		background-repeat: no-repeat;
+	}
 }

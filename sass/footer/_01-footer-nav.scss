@@ -1,5 +1,45 @@
+.footer {
+	padding: 15px 0px;
+}
+
+.footer__box {
+	width: 100%;
+	margin-bottom: 67px;
+	@include flex-center($content: space-between);
+}
+
+.footer-nav {
+	@include flex-center;
+}
+
+.footer-nav__item {
+	&:not(:last-child) {
+		margin-right: 50px;
+	}
+}
+
 .footer-nav__link {
 	font-size: $footer-link-s;
 	line-height: $footer-link-lh;
 	color: $footer-nav-color;
+
+	&:hover,
+	&:focus {
+		color: $accent-color;
+	}
+}
+
+.social-list {
+	@include flex-center;
+}
+
+.social-list__item {
+	&:not(:last-child) {
+		margin-right: 40px;
+	}
+}
+
+.copyright {
+	display: block;
+	text-align: center;
 }
