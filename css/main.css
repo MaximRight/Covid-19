@@ -324,7 +324,7 @@ body {
   content: "";
   width: 880px;
   height: 693px;
-  background-image: url(../../images/overview-2.svg);
+  background-image: url(../images/overview-2.svg);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -397,15 +397,15 @@ body {
 }
 
 .contagion-list__item:nth-child(1)::before {
-  background-image: url(../../images/contagion-1.svg);
+  background-image: url(../images/contagion-1.svg);
 }
 
 .contagion-list__item:nth-child(2)::before {
-  background-image: url(../../images/contagion-2.svg);
+  background-image: url(../images/contagion-2.svg);
 }
 
 .contagion-list__item:nth-child(3)::before {
-  background-image: url(../../images/contagion-3.svg);
+  background-image: url(../images/contagion-3.svg);
 }
 
 .contagion-list__title {
@@ -447,7 +447,7 @@ body {
   content: "";
   width: 1168px;
   height: 872px;
-  background-image: url(../../images/symptoms.svg);
+  background-image: url(../images/symptoms.svg);
   background-size: contain;
   background-repeat: no-repeat;
 }
@@ -541,19 +541,19 @@ body {
 }
 
 .prevention-list__item:nth-child(1) .prevention-list__svg {
-  background-image: url(../../images/prevent-1.svg);
+  background-image: url(../images/prevent-1.svg);
 }
 
 .prevention-list__item:nth-child(2) .prevention-list__svg {
-  background-image: url(../../images/prevent-2.svg);
+  background-image: url(../images/prevent-2.svg);
 }
 
 .prevention-list__item:nth-child(3) .prevention-list__svg {
-  background-image: url(../../images/prevent-3.svg);
+  background-image: url(../images/prevent-3.svg);
 }
 
 .prevention-list__item:nth-child(4) .prevention-list__svg {
-  background-image: url(../../images/prevent-4.svg);
+  background-image: url(../images/prevent-4.svg);
 }
 
 .map.section {

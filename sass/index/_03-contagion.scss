@@ -45,7 +45,7 @@ $items: "1" "contagion-1", "2" "contagion-2", "3" "contagion-3";
 
 @each $childNumber, $iconName in $items {
 	.contagion-list__item:nth-child(#{$childNumber})::before {
-		background-image: url(../../images/#{$iconName}.svg);
+		background-image: url(../images/#{$iconName}.svg);
 	}
 }
 
